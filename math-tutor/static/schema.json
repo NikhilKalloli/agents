@@ -1,0 +1,90 @@
+{
+    "name": "integration_topic_schema",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "properties": {
+        "section": {
+          "type": "string",
+          "description": "Section title, e.g., \"7.2 Integration as an Inverse Process of Differentiation\""
+        },
+        "sub_headings": {
+          "type": "array",
+          "description": "Array of subheading texts",
+          "items": {
+            "type": "string",
+            "description": "Subheading text, e.g., \"Definition of Integration\", \"Basic Observations and Examples\", etc."
+          }
+        },
+        "difficulty_level": {
+          "type": "string",
+          "description": "Difficulty level for this subheading (e.g., \"beginner\", \"intermediate\", \"advanced\")."
+        },
+        "notes": {
+          "type": "array",
+          "description": "Additional notes or remarks related to this subheading.",
+          "items": {
+            "type": "string",
+            "description": "A single note or remark about the topic."
+          }
+        },
+        "tips_to_approach": {
+          "type": "array",
+          "description": "Tips or strategies for approaching the material under this subheading.",
+          "items": {
+            "type": "string",
+            "description": "A single tip or strategy for understanding the topic."
+          }
+        },
+        "concepts": {
+          "type": "array",
+          "description": "Array of concept objects, each containing a topic and its subtopics with explanations.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "topic": {
+                "type": "string",
+                "description": "Name of the concept or topic (e.g., \"Definition of Integration\")."
+              },
+              "subtopics": {
+                "type": "array",
+                "description": "Array of subtopic objects corresponding to this concept.",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "subtopic": {
+                      "type": "string",
+                      "description": "Name of the subtopic (e.g., \"Core Idea\", \"Notation\")."
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "description": "A very very Detailed explanation text for this subtopic from JEE Point of View."
+                    }
+                  },
+                  "required": [
+                    "subtopic",
+                    "explanation"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "topic",
+              "subtopics"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "section",
+        "sub_headings",
+        "difficulty_level",
+        "notes",
+        "tips_to_approach",
+        "concepts"
+      ],
+      "additionalProperties": false
+    }
+  }

@@ -1,0 +1,18 @@
+{
+  "section": "Application of Integrals - Area Bounded by Curves (Examples)",
+  "sub_headings": [
+    "Example 3: Area bounded by a straight line, the x-axis, and ordinates",
+    "Example 4: Area bounded by a trigonometric curve (cosine function) and the x-axis"
+  ],
+  "difficulty_level": "intermediate",
+  "notes": [
+    "Always visualize the bounded region by making a rough sketch of the curve and lines involved.",
+    "For each example, identify the intersection points and the respective limits of integration.",
+    "Remember to consider regions above and below the x-axis separately, as areas below the x-axis give negative values in definite integrals."
+  ],
+  "tips_to_approach": [
+    "Draw a clear diagram showing intersections and bounded regions before applying integration.",
+    "Divide the area into simpler sub-regions if the function crosses the x-axis, handling positive and negative contributions correctly.",
+    "When integrating, always substitute the upper and lower limits correctly and interpret the result as a positive area."
+  ]
+}

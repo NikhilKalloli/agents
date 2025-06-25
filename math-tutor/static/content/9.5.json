@@ -1,0 +1,41 @@
+{
+  "section": "9.4.3 Linear Differential Equations",
+  "sub_headings": [
+    "Introduction to First Order Linear Differential Equations",
+    "Standard Form and Definition",
+    "Examples of First Order Linear Differential Equations",
+    "Alternative Form of First Order Linear Differential Equations",
+    "Method of Solution for dy/dx + P(x)y = Q(x)",
+    "Derivation of Integrating Factor (I.F.)",
+    "General Solution Formula",
+    "Step-by-Step Procedure to Solve First Order Linear Differential Equations",
+    "Solution Approach for dy/dx + P1(y)x = Q1(y)",
+    "Examples and Detailed Solutions",
+    "Example 14: Solve dy/dx - y = cos x",
+    "Example 15: Solve (dy/dx) * (1/x) + 2y = x",
+    "Example 16: Solve y dx - (x + 2y^2) dy = 0",
+    "Example 17: Solve dy/dx + y cot x = 2x + x^2 cot x",
+    "Example 18: Find the curve with slope equal to x + xy, passing through (0,1)"
+  ],
+  "difficulty_level": "intermediate",
+  "notes": [
+    "First order linear differential equations are characterized by the form dy/dx + P(x)y = Q(x), where P and Q can be constants or functions of the independent variable x.",
+    "Integrating Factor (I.F.) method converts the left hand side of the differential equation into the exact derivative of y times the integrating factor, facilitating the integration process.",
+    "Distinct forms of first order linear differential equations arise depending on whether P and Q are functions of x or y, and the method adapts accordingly.",
+    "The derivation of the integrating factor involves solving the differential equation for g(x) such that the product g(x)y has a derivative matching the left side of the equation.",
+    "Examples illustrate the method with various functions P and Q, showing explicit calculation of I.F., integration steps, and handling of integration constants.",
+    "Careful application of integration by parts is required in several examples involving products of exponential and trigonometric functions.",
+    "Finding particular solutions involves substituting initial conditions after obtaining the general solution.",
+    "The alternate form where dy/dx is expressed in terms involving P1(y) and Q1(y) requires integrating with respect to y and uses an integrating factor related to y."
+  ],
+  "tips_to_approach": [
+    "Always write the given differential equation in the form dy/dx + P(x)y = Q(x) to identify P and Q clearly.",
+    "Calculate the integrating factor I.F.=e^(\u222bP dx) systematically before proceeding to multiply through the equation.",
+    "Remember that multiplying the equation by the integrating factor transforms the left hand side into the exact derivative of y times the integrating factor.",
+    "Use integration techniques like integration by parts whenever you encounter products of functions during the integration of the right hand side.",
+    "After integration, include the constant of integration C to represent the general solution.",
+    "If initial or boundary conditions are provided, substitute these into the general solution to find the particular solution.",
+    "For alternative forms where variables are inverted (e.g., dx/dy), rewrite appropriately and compute the integrating factor with respect to the right variable.",
+    "Understand each step\u2019s purpose: rewriting, integrating factor derivation, multiplication, integration, and solution expression \u2014 to avoid procedural errors."
+  ]
+}

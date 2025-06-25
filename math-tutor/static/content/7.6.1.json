@@ -1,0 +1,24 @@
+{
+  "section": "7.6 Integration by Parts",
+  "sub_headings": [
+    "Introduction and Theorem Statement",
+    "Derivation of Integration by Parts (IBP) Formula",
+    "How to Choose the Functions: First and Second Function",
+    "Working Examples of Integration by Parts",
+    "Key Remarks and Special Cases",
+    "Integration of the Type \u222be\u02e3[f(x) + f\u2032(x)] dx",
+    "Additional Examples for Practice"
+  ],
+  "difficulty_level": "intermediate to advanced",
+  "notes": [
+    "Integration by parts is an essential tool for integrating products of functions.",
+    "The choice of first and second function is critical and often dictated by the LIATE rule (Logarithmic, Inverse trigonometric, Algebraic, Trigonometric, Exponential).",
+    "The method is not universally applicable, and the need for good algebraic manipulations arises in non-standard cases."
+  ],
+  "tips_to_approach": [
+    "Always identify clearly the two functions involved in the product.",
+    "Use the LIATE rule for deciding which function to take as first: (L)ogarithmic > (I)nverse trigonometric > (A)lgebraic > (T)rigonometric > (E)xponential.",
+    "After applying integration by parts, always check if the resulting integral is simpler than the original.",
+    "Be careful about constants of integration when combining results."
+  ]
+}

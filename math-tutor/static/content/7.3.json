@@ -1,0 +1,21 @@
+{
+  "section": "7.4 Standard Integrals Involving Quadratic Expressions",
+  "sub_headings": [
+    "A. Standard Integral Formulae and Their Derivation",
+    "B. Reduction to Standard Forms (Completing the Square Method)",
+    "C. Integration by Resolving the Numerator (Partial Fractions and Linear Combination)",
+    "D. Examples for Practice"
+  ],
+  "difficulty_level": "intermediate",
+  "notes": [
+    "Focuses on evaluating integrals involving quadratic polynomials using standard forms.",
+    "Emphasizes quadratic completion and variable substitution techniques.",
+    "Key to mastering JEE Main and Advanced typical integral questions."
+  ],
+  "tips_to_approach": [
+    "Always try to complete the square in the denominator to reduce to standard forms.",
+    "Memorize the standard integral results given in this subsection for quick application.",
+    "For rational integrals where numerator degree is lower than denominator, try expressing numerator in terms of denominator's derivative and constants.",
+    "Check for possible substitution (x = a sin \u03b8, x = a tan \u03b8, etc.) whenever quadratic forms match trigonometric identities."
+  ]
+}

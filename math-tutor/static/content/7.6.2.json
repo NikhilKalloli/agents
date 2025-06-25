@@ -1,0 +1,20 @@
+{
+  "section": "7.6.2 Integrals of Some More Types",
+  "sub_headings": [
+    "Introduction to Special Types of Standard Integrals by Parts",
+    "Integration Techniques for Given Types",
+    "Examples Illustrating the Process"
+  ],
+  "difficulty_level": "advanced",
+  "notes": [
+    "These types of integrals frequently appear in advanced JEE problems, especially those involving algebraic manipulation and substitution techniques.",
+    "Integration by parts is a powerful tool; choosing the correct function to differentiate and the correct function to integrate is crucial.",
+    "Trigonometric substitutions can significantly simplify the integration of expressions involving quadratic terms under the square root."
+  ],
+  "tips_to_approach": [
+    "Always look for symmetry or possibility of substitution to simplify the integral.",
+    "For quadratic expressions in the integrand, consider completing the square and/or using appropriate trigonometric substitutions.",
+    "Check if the given integrals are related to standard forms and recall their direct integration results if available.",
+    "Practice integration by parts thoroughly to recognize patterns easily."
+  ]
+}

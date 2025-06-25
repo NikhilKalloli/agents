@@ -1,0 +1,20 @@
+{
+  "section": "7.10 Some Properties of Definite Integrals",
+  "sub_headings": [
+    "Key Properties of Definite Integrals (P0 - P7)",
+    "Proofs of the Properties",
+    "Examples Based on Definite Integral Properties"
+  ],
+  "difficulty_level": "intermediate",
+  "notes": [
+    "These properties are essential for simplifying and evaluating definite integrals, especially in the context of problems in the JEE syllabus.",
+    "Some properties are connected to symmetry, substitution, and the nature (even/odd) of the functions involved.",
+    "A strong command of these can reduce computational workload and help spot shortcuts during exams."
+  ],
+  "tips_to_approach": [
+    "Carefully memorize the seven main properties (P0 to P7) as many JEE problems can be greatly simplified using them.",
+    "While solving, actively look for ways to apply symmetry (P3, P4, P5, P6, P7) and substitution tricks for changing the variable or the limits.",
+    "Whenever a question involves an even or odd function, immediately consider P7.",
+    "Practice transforming the limits and the integrand as suggested in these properties; it not only helps in evaluation but in proof-based questions."
+  ]
+}

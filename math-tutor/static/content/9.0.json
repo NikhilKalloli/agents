@@ -1,0 +1,29 @@
+{
+  "section": "9. Differential Equations: Introduction and Fundamental Concepts",
+  "sub_headings": [
+    "Introduction to Differential Equations",
+    "Definition and Identification of Differential Equations",
+    "Types of Differential Equations: Ordinary vs Partial",
+    "Notation for Derivatives",
+    "Order of a Differential Equation",
+    "Degree of a Differential Equation",
+    "Examples and Practice on Order and Degree"
+  ],
+  "difficulty_level": "intermediate",
+  "notes": [
+    "Differential equations involve derivatives of dependent variables with respect to independent variables, distinguishing them from regular algebraic or trigonometric equations which contain only variables.",
+    "Ordinary Differential Equations (ODEs) involve derivatives with respect to a single independent variable, whereas Partial Differential Equations involve multiple independent variables.",
+    "Understanding the order and degree of a differential equation is critical as it characterizes the complexity of the equation and influences solution methods.",
+    "Order of a differential equation is always a positive integer representing the highest derivative's order present in the equation.",
+    "Degree is defined only when the equation is a polynomial in derivatives; it is the highest power of the highest order derivative term.",
+    "Notation using primes (\u2032, \u2032\u2032, \u2032\u2032\u2032) is handy for lower order derivatives, while the notation y^(n) is preferred for nth order derivatives to avoid ambiguity."
+  ],
+  "tips_to_approach": [
+    "Review basic differentiation concepts as differential equations fundamentally connect a function to its derivatives.",
+    "Identify clearly which variable is independent and which is dependent to classify differential equations correctly.",
+    "When determining order, carefully find the highest derivative present in the equation.",
+    "For degree, ensure the equation is polynomial in derivatives; if not, the degree is undefined.",
+    "Practice converting common equations involving derivatives into differential equation form to develop familiarity.",
+    "Use notation consistently to avoid confusion between different orders of derivatives."
+  ]
+}

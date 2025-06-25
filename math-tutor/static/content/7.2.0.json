@@ -1,0 +1,23 @@
+{
+  "section": "7.2 Integration as an Inverse Process of Differentiation",
+  "sub_headings": [
+    "A. Definition and Basic Concept",
+    "B. Examples and Non-Uniqueness of Integrals",
+    "C. General Representation of Antiderivatives",
+    "D. Notation and Terminology",
+    "E. Standard Integral Formulae"
+  ],
+  "difficulty_level": "beginner",
+  "notes": [
+    "Integration is also referred to as anti-differentiation.",
+    "Every differentiable function has infinitely many antiderivatives, differing by a constant.",
+    "The constant of integration C allows for all possible original functions before differentiation.",
+    "Standard integrals can be directly memorized and used to solve complex integration problems."
+  ],
+  "tips_to_approach": [
+    "Always check if a given function is a derivative of some known function.",
+    "Add the constant of integration C in every indefinite integral.",
+    "Practice recalling basic derivative and integral pairs for speedier problem-solving.",
+    "Understand how to use the notation and terms precisely to avoid confusion in exam-type questions."
+  ]
+}

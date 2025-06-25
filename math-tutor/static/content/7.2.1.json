@@ -1,0 +1,26 @@
+{
+  "section": "7.2.1 Some Properties of Indefinite Integrals",
+  "sub_headings": [
+    "1. Inverse Relationship Between Differentiation and Integration",
+    "2. Equivalence of Indefinite Integrals with Same Derivative",
+    "3. Linearity \u2013 Sum Property of Indefinite Integrals",
+    "4. Homogeneity \u2013 Constant Multiple Property",
+    "5. Generalization to Finite Number of Functions",
+    "6. Integration by Inspection (Antiderivative by Guessing)",
+    "7. Examples to Illustrate Properties",
+    "8. Remarks and Notes"
+  ],
+  "difficulty_level": "beginner",
+  "notes": [
+    "These properties are fundamental for solving integration problems in JEE.",
+    "Understanding these will make manipulating and solving integrals much easier in calculus.",
+    "The arbitrary constant of integration is a central aspect of indefinite integrals, and knowing when and how to use it is essential."
+  ],
+  "tips_to_approach": [
+    "Carefully relate each property to its equivalent property in differentiation.",
+    "Practice several examples for each property to solidify understanding.",
+    "When integrating, always remember to add the constant of integration, except when asked for a particular solution.",
+    "Use the method of inspection for quick integration when possible.",
+    "For complex expressions, try decomposing into simpler terms and apply linearity and homogeneity."
+  ]
+}

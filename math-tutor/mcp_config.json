@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "mem0": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@mem0ai/mem0-memory-mcp",
+        "--key",
+        "654856a0-3b9d-435f-86bc-67f164cc8a60",
+        "--profile",
+        "conservative-lungfish-99cGcG"
+      ]
+    }
+  }
+} 

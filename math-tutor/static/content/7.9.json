@@ -1,0 +1,19 @@
+{
+  "section": "7.9 Evaluation of Definite Integrals by Substitution",
+  "sub_headings": [
+    "Introduction",
+    "Step-by-Step Procedure for Substitution in Definite Integrals",
+    "Remarks and Shortcut",
+    "Worked Examples"
+  ],
+  "difficulty_level": "intermediate",
+  "notes": [
+    "The substitution method converts a difficult integral into a simpler or standard form by introducing a new variable.",
+    "In definite integrals, you can substitute the limits immediately after substituting the variable, thus avoiding back-substitution."
+  ],
+  "tips_to_approach": [
+    "Always carefully choose the substitution so that the new integral is easier to evaluate.",
+    "Remember to change the limits of integration when you change the variable.",
+    "Express dx in terms of the new variable and its differential before substituting."
+  ]
+}

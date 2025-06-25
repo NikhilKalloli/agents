@@ -1,0 +1,22 @@
+{
+  "section": "7.7 Definite Integrals & 7.8 Fundamental Theorem of Calculus",
+  "sub_headings": [
+    "Definition and Notation of Definite Integral",
+    "Interpretation as Area and the Area Function",
+    "Fundamental Theorem of Calculus: Statement and Meaning",
+    "Working with Definite Integrals: Steps and Remarks",
+    "Examples with Stepwise Solution"
+  ],
+  "difficulty_level": "intermediate",
+  "notes": [
+    "Definite integrals are core to both the calculation of area and the connection between differentiation and integration.",
+    "The value of a definite integral is a number (not a function, as in indefinite integrals).",
+    "The precise use of limits and continuity is crucial for the correct evaluation of definite integrals."
+  ],
+  "tips_to_approach": [
+    "Always check if the function to be integrated is defined and continuous over the given interval.",
+    "Remember: For definite integrals, the constant of integration cancels out \u2013 do not include it.",
+    "Practice breaking down complex integrands into simpler forms or use substitution/partial fractions if necessary.",
+    "Know when to use geometric interpretation (area) and when to use anti-derivatives (calculation)."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "section": "9.4.2 Homogeneous Differential Equations",
+  "sub_headings": [
+    "Definition and Identification of Homogeneous Functions",
+    "Properties and Examples of Homogeneous Functions",
+    "Forming Homogeneous Differential Equations",
+    "Method of Solving Homogeneous Differential Equations",
+    "Worked Examples on Homogeneous Differential Equations"
+  ],
+  "difficulty_level": "intermediate",
+  "notes": [
+    "A function F(x, y) is homogeneous of degree n if replacing x by \u03bbx and y by \u03bby scales the function by \u03bb^n.",
+    "A differential equation dy/dx = F(x,y) is homogeneous if F(x,y) is homogeneous of degree zero.",
+    "The substitution y = vx or x = vy reduces the homogeneous DE to separable form.",
+    "Attention is required to properly differentiate after substitution and to rearrange terms for integration.",
+    "General solutions often involve logarithmic and inverse trigonometric functions depending on the integration outcome."
+  ],
+  "tips_to_approach": [
+    "Understand the definition of homogeneous functions clearly through scaling property.",
+    "Practice rewriting functions to factor out powers of x or y to recognize homogeneity.",
+    "Master the substitution y = vx or x = vy to simplify the DE to a separable form.",
+    "Focus on expressing F(x,y) as a function of y/x or x/y to identify degree zero functions.",
+    "During integration, carefully separate variables and integrate implicitly if needed.",
+    "Verify solutions by back substitution into the original differential equation."
+  ]
+}

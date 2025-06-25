@@ -1,0 +1,26 @@
+{
+  "section": "7.5 Integration by Partial Fractions",
+  "sub_headings": [
+    "Introduction to Partial Fractions",
+    "Types of Rational Functions: Proper and Improper",
+    "Reduction of Improper Rational Functions",
+    "Concept of Partial Fraction Decomposition",
+    "Forms of Partial Fractions (Table 7.2)",
+    "Step-by-step Solution to Example Problems",
+    "Special Notes on Partial Fraction Problems"
+  ],
+  "difficulty_level": "intermediate",
+  "notes": [
+    "Integration by partial fractions is a crucial technique for integrating rational functions, especially useful for JEE Advanced and Mains.",
+    "It is necessary to distinguish between proper and improper rational functions before applying the method.",
+    "Solving for the unknowns in partial fractions involves systematic algebra, often equating coefficients or substituting values."
+  ],
+  "tips_to_approach": [
+    "Always check if the rational function is proper. If not, perform polynomial long division first.",
+    "Factorize the denominator completely to decide the form of partial fractions.",
+    "Set up the partial fraction decomposition according to the degree and type (linear, repeated, irreducible quadratic) of each factor in the denominator.",
+    "Solve for unknowns (A, B, C, ...) by equating coefficients, or by plugging in convenient values for x.",
+    "Once decomposed, integrate each term using standard formulas and substitution if needed.",
+    "In some cases, substitution (like x^2 = y) simplifies the calculation, especially with quadratic denominators."
+  ]
+}

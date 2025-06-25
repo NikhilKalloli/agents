@@ -1,0 +1,21 @@
+{
+  "section": "8. APPLICATION OF INTEGRALS",
+  "sub_headings": [
+    "8.1 Introduction",
+    "8.2 Area under Simple Curves"
+  ],
+  "difficulty_level": "beginner to intermediate",
+  "notes": [
+    "Integration is essential for calculating areas bounded by curves not handled by basic geometric formulae.",
+    "The area under a curve can be visualized and calculated using strips (vertical or horizontal) and integrating.",
+    "When the function is below the x-axis, only the absolute value of the definite integral represents the physical area.",
+    "For symmetric figures (like circles, ellipses), calculations can be simplified by considering one quarter and multiplying."
+  ],
+  "tips_to_approach": [
+    "Always sketch the region whose area you are calculating and indicate bounds, variables, and symmetry.",
+    "Determine whether vertical or horizontal strips (dx or dy integration) will simplify your integral.",
+    "Pay close attention to whether the function is positive or negative within your region.",
+    "For definite integrals yielding negative values (below x-axis), take their absolute values for the correct area.",
+    "Symmetry is a powerful tool\u2014use it to reduce the effort needed by integrating only over part of the region."
+  ]
+}

@@ -1,0 +1,13 @@
+streamlit
+openai
+openai-agents
+psycopg2-binary
+pandas
+numpy
+asyncio
+logging
+exa-py
+pydantic
+anthropic
+nest_asyncio
+pydantic-ai[logfire]

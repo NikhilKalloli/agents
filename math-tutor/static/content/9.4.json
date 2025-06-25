@@ -1,0 +1,30 @@
+{
+  "section": "9.4 Methods of Solving First Order, First Degree Differential Equations",
+  "sub_headings": [
+    "Introduction to First Order First Degree Differential Equations",
+    "Method 1: Differential Equations with Variables Separable",
+    "Step-by-step Solution Procedure for Variables Separable Equations",
+    "Examples Demonstrating Separation of Variables Method",
+    "Example 4: Solving a Linear Equation with Separable Variables",
+    "Example 5: Solving Using Inverse Trigonometric Functions",
+    "Example 6: Finding Particular Solution Given Initial Conditions",
+    "Example 7: Finding Equation of Curve from a Given Differential Equation",
+    "Example 8: Curve Equation from Slope Function",
+    "Example 9: Real-life Application in Continuously Compounded Interest"
+  ],
+  "difficulty_level": "intermediate",
+  "notes": [
+    "First order first degree differential equations appear frequently in engineering, physics, and applied mathematics and often model rate processes.",
+    "Separation of variables is a fundamental technique where a differential equation can be decomposed into integrable functions of individual variables.",
+    "The notation \\( \\frac{dy}{dx} \\) as a ratio is justified for such manipulations although technically it is a limit form.",
+    "Obtaining particular solutions requires initial or boundary conditions to determine the integration constant.",
+    "Transforming practical problems, such as compound interest growth, into differential equations allows leveraging calculus methods to find solutions efficiently."
+  ],
+  "tips_to_approach": [
+    "Identify whether a differential equation is separable by checking if the right hand side factors into a product of a function of \\( x \\) and a function of \\( y \\).",
+    "Rewrite \\( \\frac{dy}{dx} = h(y) \\cdot g(x) \\) as \\( \\frac{1}{h(y)} dy = g(x) dx \\) to separate variables properly.",
+    "Integrate both sides with respect to their variables carefully, ensuring to include the constant of integration.",
+    "Apply initial or boundary conditions after general integration to find the particular solutions.",
+    "Relate the mathematical solution back to the physical or practical context of the problem for better understanding."
+  ]
+}
