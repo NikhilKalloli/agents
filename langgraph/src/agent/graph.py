@@ -10,6 +10,9 @@ from langchain_core.runnables import RunnableConfig
 from langchain_core.messages import BaseMessage
 from langgraph.graph import StateGraph, START
 from langgraph.graph.message import add_messages
+from langgraph.prebuilt import ToolNode
+from langchain_openai import ChatOpenAI
+from agent.tools import api_tools
 
 
 class Configuration(TypedDict):
@@ -22,59 +25,77 @@ class Configuration(TypedDict):
     model_name: str  # e.g., "openai", "anthropic", "ollama"
 
 
-class State(TypedDict):
-    """The state of the chatbot conversation.
-
-    Messages have the type "list". The `add_messages` function
-    in the annotation defines how this state key should be updated
-    (in this case, it appends messages to the list, rather than overwriting them)
-    """
-
-    messages: Annotated[list[BaseMessage], add_messages]
+class AgentState(TypedDict):
+    messages: Annotated[list, add_messages]
 
 
-def _get_model(model_name: str):
-    """Get the appropriate model based on configuration."""
-    if model_name == "openai":
-        from langchain_openai import ChatOpenAI
-        return ChatOpenAI(model="gpt-4o-mini")
-    elif model_name == "anthropic":
-        from langchain_anthropic import ChatAnthropic
-        return ChatAnthropic(model="claude-3-haiku-20240307")
-    elif model_name == "ollama":
-        from langchain_community.llms import Ollama
-        return Ollama(model="llama2")
+# Initialize the tool node with the API tools
+tool_node = ToolNode(api_tools)
+
+# Initialize the model
+# We'll use OpenAI's function-calling capabilities
+model = ChatOpenAI(model="gpt-4o-mini")
+
+# Bind the tools to the model
+model = model.bind_tools(api_tools)
+
+
+# Define the function that determines whether to continue or not
+def should_continue(state: AgentState) -> str:
+    messages = state['messages']
+    last_message = messages[-1]
+    # If there are no tool calls, then we finish
+    if not last_message.tool_calls:
+        return "end"
+    # Otherwise if there are tool calls, we call the tool node
     else:
-        # Default fallback
-        try:
-            from langchain_openai import ChatOpenAI
-            return ChatOpenAI(model="gpt-4o-mini")
-        except ImportError:
-            raise ValueError(f"Unsupported model: {model_name}")
+        return "continue"
 
 
-def chatbot(state: State, config: RunnableConfig) -> Dict[str, Any]:
-    """Main chatbot node that processes messages and generates responses."""
-    configuration = config["configurable"]
-    model_name = configuration.get("model_name", "openai")
-    
-    # Get the configured model
-    model = _get_model(model_name)
-    
-    # Get the current messages
-    messages = state["messages"]
-    
-    # Generate response
+# Define the function that calls the model
+def call_model(state: AgentState):
+    messages = state['messages']
     response = model.invoke(messages)
-    
-    # Return the response (will be added to messages list)
+    # We return a list, because this will get added to the existing list
     return {"messages": [response]}
 
 
-# Define the graph
-graph = (
-    StateGraph(State, config_schema=Configuration)
-    .add_node("chatbot", chatbot)
-    .add_edge(START, "chatbot")
-    .compile(name="Chatbot")
+# Define a new graph
+workflow = StateGraph(AgentState)
+
+# Define the two nodes we will cycle between
+workflow.add_node("agent", call_model)
+workflow.add_node("action", tool_node)
+
+# Set the entrypoint as `agent`
+# This means that this node is the first one called
+workflow.set_entry_point("agent")
+
+# We now add a conditional edge
+workflow.add_conditional_edges(
+    # First, we define the start node. We use `agent`.
+    # This means these edges will take effect after the `agent` node is called.
+    "agent",
+    # Next, we pass in the function that will determine which node is called next.
+    should_continue,
+    # Finally we define a mapping.
+    # The keys are strings, and the values are other nodes.
+    # END is a special node marking that the graph should finish.
+    # What will happen is we will call `should_continue`, and then the output of that
+    # will be matched against the keys in this mapping.
+    # Based on which one it is, that node will then be called.
+    {
+        # If `tools`, then we call the tool node.
+        "continue": "action",
+        # Otherwise we finish.
+        "end": "__end__",
+    },
 )
+
+# We now add a normal edge from `tools` to `agent`.
+# This means that after `tools` is called, `agent` will be called next.
+workflow.add_edge("action", "__end__")
+
+# Finally, we compile it!
+# This workflow is now runnable
+graph = workflow.compile()
