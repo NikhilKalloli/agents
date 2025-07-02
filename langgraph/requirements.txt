@@ -1,0 +1,7 @@
+langgraph
+langchain
+langchain_openai
+python-dotenv
+tavily-python
+langchain_community
+langgraph-cli 
