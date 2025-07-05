@@ -1,4 +1,4 @@
-# Flowise
+# [Flowise](https://flowiseai.com/)
 
 ## What it is
 An open-source, visual AI agent builder supporting LangGraph, LangChain, and other frameworks. Flowise offers a drag-and-drop interface and robust API access.
