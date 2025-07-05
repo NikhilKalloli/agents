@@ -19,10 +19,6 @@ Exposes endpoints for creating, updating, and retrieving agent configurations, m
 - Self-hosted and cloud deployment options
 - Supports advanced orchestration, RAG, and tool integration
 
-## Documentation
-- Flowise Docs  
-- API Usage  
-
 **Open Source:** Yes
 
 ---
