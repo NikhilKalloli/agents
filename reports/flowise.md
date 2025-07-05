@@ -3,6 +3,12 @@
 ## What it is
 An open-source, visual AI agent builder supporting LangGraph, LangChain, and other frameworks. Flowise offers a drag-and-drop interface and robust API access.
 
+| Framework  | Native Support in Flowise? | Notes                                                                 |
+|------------|-----------------------------|-----------------------------------------------------------------------|
+| LangChain  | Yes                         | Full integration, visual builder, agent and chain support            |
+| LangGraph  | No (as of July 2025)        | No direct/native support; some “graph-style” workflows possible via Flowise’s own tools |
+
+
 ## API Access
 Exposes endpoints for creating, updating, and retrieving agent configurations, metadata, and runtime data. You can programmatically manage agents and extract all relevant details.
 
