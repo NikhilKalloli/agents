@@ -19,11 +19,6 @@ You can extract agent IDs, config, metadata, logs, execution status, and more.
 - RAG and external tool integration
 - Authentication and access control
 
-## Documentation
-- OAP Docs  
-- Quickstart & API Reference  
-- Agent Setup  
-
 **Open Source:** Yes
 
 ---
